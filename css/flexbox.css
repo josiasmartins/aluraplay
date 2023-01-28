@@ -12,6 +12,13 @@
     display: none;
 }
 
+.menu__container {
+    position: fixed;
+    bottom: 0%;
+    height: 74px;
+    width: 100%;
+}
+
 /* SUPERIOR SEÇÃO */
 
 .superior__secao__container {
