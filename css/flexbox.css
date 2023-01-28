@@ -1,0 +1,48 @@
+/* CABECALHO */
+
+.cabecalho__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+.cabecalho__pesquisar__item {
+    display: none;
+}
+
+/* SUPERIOR SEÇÃO */
+
+.superior__secao__container {
+    display: flex;
+    align-items: center; /* alinha os itens vertical*/
+    white-space: nowrap; /* não deixa quebrar o texto */
+    overflow: scroll; /* aplica a barra de rolagem */
+    gap: 15px; /* ideal para aplicar espaçamento entre os elementos filhos... obs: ele não aplica espaçamento entre as extremidades dos itens*/
+}
+
+/* RODAPE */
+
+.rodape__container {
+    display: flex;
+    flex-direction: column ;/*usado para alterar o eixo vertical ou horizontal*/
+    flex-wrap: wrap;
+    /* outra forma de aplicar o flex-direction e flex-wrap */
+    /* flex-flow: column wrap; */
+}
+
+@media (min-width: 834px) {
+
+    /* CABECALHO */
+
+    .cabecalho__pesquisar__item {
+        display: block; /* block: valor padrão */
+    }
+
+    /* RODAPÉ */
+
+    .rodape__container {
+        justify-content: space-between;
+    }
+}
