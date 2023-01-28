@@ -12,11 +12,35 @@
     display: none;
 }
 
+/* MENU */
 .menu__container {
     position: fixed;
     bottom: 0%;
     height: 74px;
     width: 100%;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    height: 100%;
+}
+
+.menu__lista li {
+    align-self: center; /* alinha o proprio elemento */
+}
+
+.menu__itens {
+    display: flex;
+    flex-direction: column; /* muda a direção */
+    gap: 5px; /* da um espacamento entre os elementos, exceto extremidade*/
+}
+
+.menu__lista:nth-child(2),
+.menu__lista:nth-child(3),
+.menu__lista:nth-child(4) {
+    display: none;
 }
 
 /* SUPERIOR SEÇÃO */
@@ -34,7 +58,7 @@
 .rodape__container {
     display: flex;
     flex-direction: column ;/*usado para alterar o eixo vertical ou horizontal*/
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* quebra a linha */
     /* outra forma de aplicar o flex-direction e flex-wrap */
     /* flex-flow: column wrap; */
 }
